@@ -4,17 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CollectionsRoutingModule } from './collections-routing.module';
 import { CollectionsHomeComponent } from './collections-home/collections-home.component';
 
-
 @NgModule({
-  declarations: [
-    CollectionsHomeComponent
-  ],
-  imports: [
-    CommonModule,
-    CollectionsRoutingModule
-  ],
-  exports: [
-    CollectionsHomeComponent
-  ]
+  declarations: [CollectionsHomeComponent],
+  imports: [CommonModule, CollectionsRoutingModule],
 })
-export class CollectionsModule { }
+export class CollectionsModule {}
