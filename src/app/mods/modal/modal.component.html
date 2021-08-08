@@ -1,6 +1,12 @@
-<div class="ui dimmer visible active">
-  <div class="ui modal visible active">
-    <i class="close icon"></i>
+<div class="ui dimmer visible active"
+     (click)="close();false">
+  <div class="ui modal visible active"
+       (click)="$event.stopPropagation()">
+    <i class="close icon"
+       aria-label="close modal"
+       (click)="close()"
+       role="button">
+    </i>
     <div class="header">
       MODAL!
     </div>
@@ -9,7 +15,8 @@
         et praesentium assumenda nam.</p>
     </div>
     <div class="actions">
-      <button class="ui button">
+      <button class="ui button"
+              (click)="close()">
         OK
       </button>
     </div>
