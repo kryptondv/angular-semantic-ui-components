@@ -8,6 +8,24 @@ import { Component, OnInit } from '@angular/core';
 export class ModsHomeComponent implements OnInit {
   modalOpen = false;
 
+  items = [
+    {
+      title: 'Why us?',
+      content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, culpa?',
+    },
+    {
+      title: 'Why now?',
+      content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, culpa?',
+    },
+    {
+      title: 'Extend guarantee',
+      content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, culpa?',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
