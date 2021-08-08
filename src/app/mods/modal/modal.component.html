@@ -8,16 +8,15 @@
        role="button">
     </i>
     <div class="header">
-      MODAL!
+      <ng-content select="[slot=title]"></ng-content>
     </div>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, a autem cum quibusdam odit ipsam accusantium
-        et praesentium assumenda nam.</p>
+      <ng-content select="[slot=content]"></ng-content>
     </div>
     <div class="actions">
       <button class="ui button"
               (click)="close()">
-        OK
+        <ng-content select="[slot=button]"></ng-content>
       </button>
     </div>
   </div>
